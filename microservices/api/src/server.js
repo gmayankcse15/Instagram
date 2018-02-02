@@ -221,7 +221,7 @@ var password = req.body.password ;
 
 
 
-var url = "https://auth.commend97.hasura-app.io/v1/signup";
+var url = "https://auth.atonal41.hasura-app.io/v1/signup";
 
 var requestOptions = {
     "method": "POST",
@@ -254,7 +254,7 @@ requestOptions.payload = JSON.stringify(body);
 
           console.log(obj.auth_token);
 
-         var url = "https://data.commend97.hasura-app.io/v1/query";
+         var url = "https://data.atonal41.hasura-app.io/v1/query";
 
           var requestOptions = {
               "method": "POST",
@@ -318,7 +318,7 @@ var email    = req.body.email ;
 var password = req.body.password ;
 
 
-var url = "https://data.commend97.hasura-app.io/v1/query";
+var url = "https://data.atonal41.hasura-app.io/v1/query";
 var body = {
     "type": "select",
     "args": {
@@ -352,7 +352,7 @@ else
  
  {
 
-var url = "https://auth.commend97.hasura-app.io/v1/signup";
+var url = "https://auth.atonal41.hasura-app.io/v1/signup";
 
 var body = {
     "provider": "email",
@@ -380,7 +380,7 @@ fetchAction.fetchUrl(url, requestOptions,function(err, meta, response) {
     {
 
 
-          var url = "https://data.commend97.hasura-app.io/v1/query";
+          var url = "https://data.atonal41.hasura-app.io/v1/query";
 
           var requestOptions = {
               "method": "POST",
@@ -446,7 +446,7 @@ var username = req.body.username ;
 var password = req.body.password ;
 
 
-var url = "https://auth.commend97.hasura-app.io/v1/login";
+var url = "https://auth.atonal41.hasura-app.io/v1/login";
 
 var requestOptions = {
     "method": "POST",
@@ -498,7 +498,7 @@ var auth_token = req.body.token ;
 //console.log(request.headers['X-Hasura-User-Id']);
 
 
-var url = "https://data.commend97.hasura-app.io/v1/query";
+var url = "https://data.atonal41.hasura-app.io/v1/query";
 
 // If you have the auth token saved in offline storage
 // var authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
@@ -549,7 +549,7 @@ var token = req.body.token
 
 
 
-var url = "https://auth.commend97.hasura-app.io/v1/user/info";
+var url = "https://auth.atonal41.hasura-app.io/v1/user/info";
 
 // If you have the auth token saved in offline storage
 // var authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
@@ -567,7 +567,7 @@ fetchAction.fetchUrl(url, requestOptions, function(error, meta, body){
     console.log(myObj.hasura_id);
 
 
-var url = "https://data.commend97.hasura-app.io/v1/query";
+var url = "https://data.atonal41.hasura-app.io/v1/query";
 
 var requestOptions = {
     "method": "POST",
@@ -620,7 +620,7 @@ var token = req.body.token
 
 
 
-var url = "https://filestore.commend97.hasura-app.io/v1/file";
+var url = "https://filestore.atonal41.hasura-app.io/v1/file";
 
 // This is the file we are going to upload, replace this with your file
 var file = image;
@@ -641,7 +641,7 @@ fetchAction.fetchUrl(url, requestOptions, function(error, meta, body){
     console.log(myObj);
 
 
-var url = "https://data.commend97.hasura-app.io/v1/query";
+var url = "https://data.atonal41.hasura-app.io/v1/query";
 
 var requestOptions = {
     "method": "POST",
@@ -690,7 +690,7 @@ app.post('/getposts', function(req, res){
 
 var fetchAction =  require('fetch');
 
-var url = "https://data.commend97.hasura-app.io/v1/query";
+var url = "https://data.atonal41.hasura-app.io/v1/query";
 
 // If you have the auth token saved in offline storage
 // var authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
@@ -735,7 +735,7 @@ app.post('/get_imageposts', function(req, res){
   var token = req.body.token ;
   var image = [] ;
 
-var url = "https://data.commend97.hasura-app.io/v1/query";
+var url = "https://data.atonal41.hasura-app.io/v1/query";
 
 // If you have the auth token saved in offline storage
 // var authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
@@ -767,7 +767,7 @@ fetchAction.fetchUrl(url, requestOptions, function(error, meta, body){
 
 
 
-    var url = "https://filestore.commend97.hasura-app.io/v1/file/"+myObj[0].file_id;
+    var url = "https://filestore.atonal41.hasura-app.io/v1/file/"+myObj[0].file_id;
 
 var requestOptions = {
     "method": "GET",
