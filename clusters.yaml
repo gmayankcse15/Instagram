@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: atonal41-hasura
+  data: null
+  kubeContext: atonal41
+  name: atonal41
