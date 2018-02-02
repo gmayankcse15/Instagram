@@ -23,5 +23,5 @@ var request = new XMLHttpRequest();
 	};
 	request.open('POST', '/getposts', true) ;
 	request.setRequestHeader('Content-Type','application/json');
-	request.send(JSON.stringify({token:  '7ee33229fcb48490ce39e32444f237e53132150ab6717bbb'}));
+	request.send(JSON.stringify({token:  'f59573c745ae0191e84c6993efe2901cb8272c2d9f0780f2'}));
 

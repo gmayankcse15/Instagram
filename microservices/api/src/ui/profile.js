@@ -17,7 +17,7 @@ request.onreadystatechange = function()
 
 request.open('POST', '/getuser', true);
 request.setRequestHeader('Content-Type','application/json');
-request.send(JSON.stringify({token:  '7ee33229fcb48490ce39e32444f237e53132150ab6717bbb'}))
+request.send(JSON.stringify({token:  'f59573c745ae0191e84c6993efe2901cb8272c2d9f0780f2'}))
 
 
 var submit = document.getElementById('submit_btn');
@@ -51,7 +51,7 @@ submit.onclick = function(){
 	var name = nameInput.value;
 	request.open('POST', '/submit-name/'+name, true) ;
 	request.setRequestHeader('Content-Type','application/json');
-	request.send(JSON.stringify({token:  '7ee33229fcb48490ce39e32444f237e53132150ab6717bbb'}));
+	request.send(JSON.stringify({token:  'f59573c745ae0191e84c6993efe2901cb8272c2d9f0780f2'}));
 
 
 };
@@ -88,7 +88,7 @@ submit.onclick = function(){
 	console.log(image);
 	request.open('POST', '/submit-image', true) ;
 	request.setRequestHeader('Content-Type','application/json');
-	request.send(JSON.stringify({Image: image, token:  '7ee33229fcb48490ce39e32444f237e53132150ab6717bbb'}));
+	request.send(JSON.stringify({Image: image, token:  'f59573c745ae0191e84c6993efe2901cb8272c2d9f0780f2'}));
 
 
 };
