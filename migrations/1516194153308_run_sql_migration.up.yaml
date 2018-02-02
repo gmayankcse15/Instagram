@@ -1,0 +1,11 @@
+- args:
+    sql: "CREATE TABLE users (\n    hasura_id INTEGER NOT NULL PRIMARY KEY,\n    username
+      TEXT NOT NULL,\n    name TEXT, \n    email TEXT,\n    phone_number TEXT\n);\n\nCREATE
+      TABLE posts (\n    id SERIAL NOT NULL PRIMARY KEY,\n    content TEXT NOT NULL,\n
+      \   user_id INTEGER NOT NULL REFERENCES users(hasura_id)\n);\n\nCREATE TABLE
+      posts_like (\n    post_id INTEGER NOT NULL REFERENCES posts(id),\n    user_id
+      INTEGER NOT NULL REFERENCES users(hasura_id),\n    PRIMARY KEY (user_id, post_id)\n);\n\nCREATE
+      TABLE comment (\n    id SERIAL NOT NULL PRIMARY KEY,\n    user_id INTEGER NOT
+      NULL REFERENCES users(hasura_id),\n    post_id INTEGER NOT NULL REFERENCES posts(id),\n
+      \   comment TEXT NOT NULL\n);\n"
+  type: run_sql

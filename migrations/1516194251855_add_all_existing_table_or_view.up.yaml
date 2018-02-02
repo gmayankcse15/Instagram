@@ -1,0 +1,12 @@
+- args:
+    name: posts_like
+  type: add_existing_table_or_view
+- args:
+    name: users
+  type: add_existing_table_or_view
+- args:
+    name: posts
+  type: add_existing_table_or_view
+- args:
+    name: comment
+  type: add_existing_table_or_view

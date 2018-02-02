@@ -1,0 +1,6 @@
+- args:
+    name: post identiy
+    table: posts_like
+    using:
+      foreign_key_constraint_on: post_id
+  type: create_object_relationship

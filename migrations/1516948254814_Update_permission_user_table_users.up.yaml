@@ -1,0 +1,14 @@
+- args:
+    role: user
+    table: users
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - username
+      filter:
+        hasura_id:
+          $eq: X-HASURA-USER-ID
+    role: user
+    table: users
+  type: create_select_permission

@@ -1,0 +1,8 @@
+- args:
+    permission:
+      columns:
+      - username
+      filter: {}
+    role: user
+    table: users
+  type: create_select_permission

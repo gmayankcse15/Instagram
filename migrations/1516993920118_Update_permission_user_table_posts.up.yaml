@@ -1,0 +1,13 @@
+- args:
+    role: user
+    table: posts
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - content
+      - user_id
+      filter: {}
+    role: user
+    table: posts
+  type: create_select_permission

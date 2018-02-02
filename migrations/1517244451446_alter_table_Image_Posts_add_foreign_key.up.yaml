@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "Image_Posts" ADD FOREIGN KEY ("user_id") REFERENCES "users"
+      ("hasura_id")
+  type: run_sql

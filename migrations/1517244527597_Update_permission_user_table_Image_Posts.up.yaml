@@ -1,0 +1,7 @@
+- args:
+    permission:
+      columns: []
+      filter: {}
+    role: user
+    table: Image_Posts
+  type: create_select_permission
