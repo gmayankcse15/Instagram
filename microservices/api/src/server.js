@@ -614,24 +614,20 @@ res.send(JSON.stringify(names));
 app.post('/submit-image', function(req, res){
 var names = [] ;
 
-var image  = req.body.Image;
+var image  = req.params.image;
 var token = req.body.token
-
-
 
 
 var url = "https://filestore.atonal41.hasura-app.io/v1/file";
 
 // This is the file we are going to upload, replace this with your file
-var file = image;
+//var file = image;
+console.log(req.file);
 
-// If you have the auth token saved in offline storage
-// var authToken = window.localStorage.getItem('HASURA_AUTH_TOKEN');
-// headers = { "Authorization" : "Bearer " + authToken }
 var requestOptions = {
   method: 'POST',
   headers: {
-      "Authorization": "Bearer "+token
+      "Authorization": "Bearer f59573c745ae0191e84c6993efe2901cb8272c2d9f0780f2"
   },
   body: file
 }
@@ -647,7 +643,7 @@ var requestOptions = {
     "method": "POST",
     "headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer "+token
+        "Authorization": "Bearer f59573c745ae0191e84c6993efe2901cb8272c2d9f0780f2"
     }
 };
 
